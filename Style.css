@@ -1,0 +1,253 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: rgba(128, 128, 128, 0.267);
+    border-radius: 10px;
+    
+}    
+::-webkit-scrollbar-thumb{
+    background-color: rgb(105, 105, 105);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:rgb(73, 73, 73);
+}
+/* Managing Top header*/ 
+#Head1{
+    background-color: coral;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    box-shadow: 1px 5px 05px rgba(0, 0, 0, 0.144);
+}
+#Name {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 150%;
+    margin: 10px 10px;
+    color: white;
+
+} 
+#Head1 #Nav{
+    display: inline-block;
+    padding-left: 25%;
+}
+#Head1 #Nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+#Head1 #Nav a:hover{
+    transition: 0.3s ;
+    color: black;
+}
+#Head1 #Nav a.ul::after{
+    content: " ";
+    background-color: black;
+    display: block;
+    height: 2px;
+    width: 100%;
+    transition: 0.5s;
+    transform: scaleX(0);
+    visibility: hidden;
+}
+#Head1 #Nav a.ul:hover::after{
+    visibility: visible;
+    transition: 0.3s ;
+    transform: scaleX(1);
+}
+
+#Head1 #Nav button{
+    margin: 10px 10px;
+    background-color: transparent;
+    border-radius: 50px ;
+    border-color: white;
+    position: absolute;
+    right: 50px;
+    border-style: dotted;
+    transition: 0.5s;
+    border-width: 1px;
+    transition: step-end;
+    border-color: whitesmoke;
+    overflow: hidden;
+}
+
+#Head1 #Nav button .btn{
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+#Head1 #Nav button::before{
+    content: "";
+    background-color: rgb(255, 255, 255);
+    position:absolute;
+    width: 100%;
+    height: 50px;
+    transform: scale(0, 2);
+    padding: 0px 0px 0px 0px;
+    transition: 0.5s;
+}
+#Head1 #Nav button:hover::before{
+    transform: scale(2, 2);
+    transition: ease-in-out 0.5s;
+}
+#Head1 #Nav button:hover .btn{
+    color: black;
+}
+#Head1 #Name a{
+    cursor: pointer;
+}
+
+#Home{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    background-image: url(Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Home #cont{
+    position:relative;
+    transform: translateY(50);
+    margin-top: 190px;
+    display: block;
+}
+#Home #dp{
+    height: 203px ;
+    width: 210px;
+    border-radius: 360px;
+    margin: 170px 10px;
+    border-color: White;
+    border-style: outset;
+    border-width: 3px;
+    padding: 10px;
+}
+#Home #cont h1{
+    color: white;
+    text-shadow: 5px 5px 10px gray;
+
+}
+#Home p a{
+    color: rgb(50, 59, 78);
+    text-decoration: none;
+}
+#Home .youtu{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    position: absolute;
+    left: 10%;
+    top: 530px;
+}
+
+#Home .phn{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 530px;
+}
+#Home .mailMe{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    position: absolute;
+    left: 70%;
+    top: 530px;
+}
+#Home .mailMe a{
+    color: white;
+    text-decoration: underline;
+}
+#content {
+    font-family: Georgia, serif;
+    text-align: center;
+    margin: 10px 10%;
+    color: rgb(49, 48, 48);
+}
+#skill{
+    padding-top: 50px ;
+}
+
+footer{
+    background-color: rgb(41, 40, 40);
+    color: white;
+}
+footer a{
+    font-size: 40px;
+}
+footer a .fa-facebook{
+    color: rgb(56, 45, 214);
+    margin: 25px;
+}
+footer a .fa-instagram{
+    margin: 25px;
+    color: rgb(133, 42, 42);
+}
+footer a .fa-twitter{
+    margin: 25px;
+    color: rgb(1, 231, 220);
+}
+footer a .fa-youtube{
+    color: red;
+    margin: 25px;
+}
+footer #email{
+    font-size: 20px;
+    color: white;
+}
+footer #Nav a{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+footer p{
+    display: inline-block;
+}
+footer #Nav{
+    float: right;
+    margin: 10px;
+}
+
+footer #Nav a:hover{
+    transition: 0.3s ;
+    color: coral;
+}
+footer #Nav a.ul::after{
+    content: " ";
+    background-color: coral;
+    display: block;
+    height: 2px;
+    width: 100%;
+    transition: 0.5s;
+    transform: scaleX(0);
+    visibility: hidden;
+}
+footer #Nav a.ul:hover::after{
+    visibility: visible;
+    transition: 0.3s ;
+    transform: scaleX(1);
+}
+footer #copy{
+    text-align: center;
+    display: block;
+    padding: 10px ;
+    background-color: black;
+}
